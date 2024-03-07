@@ -72,8 +72,7 @@ header {
 }
 
 
-
-/* Main Sectiom */
+/* Main Section */
 
 /* Headings  */
 
@@ -132,4 +131,14 @@ h2 {
     width: clamp(100px, 25%, 500px);
     border-radius: 25px;
     aspect-ratio: 1/1;
+}
+
+/* Bio Section */
+
+.about-me{
+    background-color: red;
+}
+
+.skills{
+    background-color: blue;
 }
