@@ -1,0 +1,135 @@
+:root {
+
+    /* Colors */
+    --black: rgb(34, 40, 49);
+    --dark-gray: rgb(57, 62, 70);
+    --ligth-gray: rgb(238, 238, 238);
+    --green: rgb(0, 173, 181);
+    --blue: rgb(54, 84, 134);
+
+    /* Font Weight */
+    --fw-light: 300;
+    --fw-normal: 400;
+    --fw-semi-bold: 500;
+    --fw-bold: 700;
+    --fw-dark: 900;
+
+    /* Font Size */
+    --fs-xsmall: .75rem;
+    --fs-small: .90rem;
+    --fs-normal: 1rem;
+    --fs-large: 1.25rem;
+    --fs-xlarge: 1.5rem;
+    --fs-xxlarge: 1.75rem;
+    --fs-xxxlarge: 2rem;
+    --fs-xxxxlarge: 3rem;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: var(--fs-normal);
+    background-color: var(--black);
+    color: var(--ligth-gray);
+    font-weight: var(--fw-normal);
+    padding-inline: 5%;
+}
+
+a {
+    color: var(--ligth-gray);
+}
+
+.flex {
+    display: flex;
+}
+
+button:is(:hover, :focus) {
+    cursor: pointer;
+}
+
+
+/* Header and Navbar */
+
+header {
+    padding: 3% 0;
+    align-items: center;
+    justify-content: space-between;
+    font-size: var(--fs-xlarge);
+    font-weight: var(--fw-semi-bold);
+}
+
+.nav-list {
+    gap: 100px;
+    align-items: center;
+}
+
+
+
+/* Main Sectiom */
+
+/* Headings  */
+
+.headings {
+    margin: 5% 0 7%;
+    gap: clamp(100px, 25%, 500px);
+    align-items: center;
+    border-bottom: 2px solid var(--blue);
+    padding-bottom: 150px;
+}
+
+.headings-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+}
+
+h1 {
+    font-size: var(--fs-xxxxlarge);
+}
+
+h1 span {
+    text-decoration: underline;
+    text-decoration-color: var(--blue);
+    text-decoration-thickness: 5px;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 8px;
+}
+
+h2 {
+    font-size: var(--fs-xxxlarge);
+}
+
+.headings p {
+    font-size: var(--fs-large);
+}
+
+.headings button {
+    width: clamp(200px, 50%, 500px);
+    padding: 15px;
+    color: var(--black);
+    font-size: var(--fs-large);
+    font-weight: var(--fw-bold);
+    background-color: var(--ligth-gray);
+    border: none;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.headings button:is(:hover,:focus) {
+    border-radius: 8px;
+    box-shadow: 0 0 10px 5px var(--blue);
+}
+
+.headings img {
+    width: clamp(100px, 25%, 500px);
+    border-radius: 25px;
+    aspect-ratio: 1/1;
+}

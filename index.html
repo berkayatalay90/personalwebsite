@@ -4,31 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Berkay Atalay's personal web site, featuring personal information and projects on front-end developing.">
+    <meta name="description"
+        content="Berkay Atalay's personal web site, featuring personal information and projects on front-end developing.">
     <meta name="keywords" content="Berkay, web developing, front-end, programming">
     <meta name="robots" content="index, follow">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="sytles.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/45231802e4.js" crossorigin="anonymous"></script>
+
     <title>Berkay Atalay's Personal Web Site</title>
 </head>
 
 <body>
 
-    <header>
-        <p class="brand-logo">berkayatalay</p>
+    <header class="flex">
+        <div>
+            <p class="brand-logo">berkayatalay</p>
+        </div>
         <nav>
-            <ul>
+            <ul class="flex nav-list">
                 <li><a href="">Home</a></li>
                 <li><a href="">About</a></li>
                 <li><a href="">Skills</a></li>
                 <li><a href="">Portfolio</a></li>
+                
             </ul>
-            <button><a href="">Contact Me!</a></button>
         </nav>
     </header>
 
     <main>
-        <section class="headings">
-            <h1>Hello, I'm Berkay</h1>
-            <h2>Exploring the Web through the Eyes of a Developer</h2>
+        <section class="headings flex">
+            <div class="headings-wrapper flex">
+                <h1>Hello, <span>I'm Berkay !</span></h1>
+                <h2>Exploring the Web through the Eyes of a Developer</h2>
+                <p>Based in Canada, I'm a front-end developer passionate about building accessible web sites.</p>
+                <a href=""><button>Contact Me!</button></a>
+            </div>
+            <img src="images/berkay-profile-pic.jpg" alt="profile-pic">
         </section>
 
         <section class="bio">
