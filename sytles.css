@@ -3,7 +3,7 @@
     /* Colors */
     --black: rgb(34, 40, 49);
     --dark-gray: rgb(57, 62, 70);
-    --ligth-gray: rgb(238, 238, 238);
+    --light-gray: rgb(238, 238, 238);
     --green: rgb(0, 173, 181);
     --blue: rgb(54, 84, 134);
 
@@ -36,15 +36,15 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    font-size: var(--fs-normal);
+    font-size: var(--fs-large);
     background-color: var(--black);
-    color: var(--ligth-gray);
+    color: var(--light-gray);
     font-weight: var(--fw-normal);
-    padding-inline: 5%;
+    /* padding-inline: 5%; */
 }
 
 a {
-    color: var(--ligth-gray);
+    color: var(--light-gray);
 }
 
 .flex {
@@ -116,13 +116,13 @@ h2 {
     color: var(--black);
     font-size: var(--fs-large);
     font-weight: var(--fw-bold);
-    background-color: var(--ligth-gray);
+    background-color: var(--light-gray);
     border: none;
     border-radius: 10px;
     margin-top: 50px;
 }
 
-.headings button:is(:hover,:focus) {
+.headings button:is(:hover, :focus) {
     border-radius: 8px;
     box-shadow: 0 0 10px 5px var(--blue);
 }
@@ -135,10 +135,46 @@ h2 {
 
 /* Bio Section */
 
-.about-me{
-    background-color: red;
+.bio {
+    background-color: var(--light-gray);
+    color: var(--black);
+    gap: 5rem;
+    text-align: center;
+    padding: 5% 2%;
+    margin-bottom: 150px;
+} 
+
+.bio div {
+    width: 50%;
+    /* border: 5px solid rgb(9, 11, 102); */
 }
 
-.skills{
-    background-color: blue;
+h4 {
+    font-size: var(--fs-xxxlarge);
+}
+
+.info {
+    line-height: 1.75;
+    margin-top: 20px;
+}
+
+.skills-wrapper {
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-icons-wrapper {
+    justify-content: center;
+    gap: var(--fs-xxxlarge);
+    font-size: var(--fs-xxxxlarge);
+    margin-top: 2rem;
+}
+
+
+/* Footer */
+
+footer {
+    margin-top: 100px;
+    background-color: var(--blue);
+    padding: 5%;
 }
