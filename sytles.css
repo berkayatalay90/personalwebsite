@@ -142,7 +142,7 @@ h2 {
     text-align: center;
     padding: 5% 2%;
     margin-bottom: 150px;
-} 
+}
 
 .bio div {
     width: 50%;
@@ -177,4 +177,29 @@ footer {
     margin-top: 100px;
     background-color: var(--blue);
     padding: 5%;
+}
+
+.contact {
+    gap: var(--fs-xxxxlarge)
+}
+
+.contact div {
+    width: 50%;
+}
+
+form {
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.social-media-wrapper {
+    justify-content: space-between;
+    margin-top: 100px;
+    border-top: 1px solid var(--light-gray);
+    padding-top: var(--fs-xxxlarge);
+}
+
+.social-media-icon-container {
+    gap: 3rem;
+    font-size: var(--fs-xxxlarge);
 }
