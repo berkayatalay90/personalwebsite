@@ -179,18 +179,72 @@ footer {
     padding: 5%;
 }
 
+/* Contact Section  */
+
 .contact {
-    gap: var(--fs-xxxxlarge)
+    justify-content: space-between;
 }
 
 .contact div {
-    width: 50%;
+    width: 40%;
 }
+
+footer h4 {
+    font-size: var(--fs-xxxxlarge);
+}
+
+.contact-info-text p {
+    padding-right: 10%;
+    margin-top: 20px;
+    line-height: 1.75;
+}
+
+/* Form Section */
 
 form {
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
+    width: 75%;
 }
+
+footer input, textarea {
+    border: none;
+    border-bottom: 1px solid var(--light-gray);
+    background-color: var(--blue);
+    padding: 2% 5% 3%;
+    color: var(--light-gray);
+    font-size: var(--fs-normal);
+}
+
+footer input:focus, textarea:focus {
+    outline: none;
+}
+
+footer input::placeholder, textarea::placeholder {
+    color: var(--light-gray);
+}
+
+.email-warning-text {
+    font-size: var(--fs-small);
+}
+
+textarea {
+    font-family: "Roboto", sans-serif;
+}
+
+.form-container button{
+    border: none;
+    background-color: var(--blue);
+    border-bottom: 2px solid var(--light-gray);
+    font-size: var(--fs-large);
+    width: 50%;
+    align-self: flex-end;
+    padding-bottom: 2%;
+    color: var(--light-gray);
+    font-size: var(--fs-large);
+}
+
+/* Social Media Section  */
 
 .social-media-wrapper {
     justify-content: space-between;
