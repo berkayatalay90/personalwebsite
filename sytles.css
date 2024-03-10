@@ -40,7 +40,7 @@
 body {
     font-family: "Roboto", sans-serif;
     font-size: var(--fs-large);
-    background-color: var(--new-gray);
+    background-color: var(--black);
     color: var(--light-gray);
     font-weight: var(--fw-normal);
 }
@@ -57,7 +57,6 @@ button:is(:hover, :focus) {
     cursor: pointer;
 }
 
-
 /* Header and Navbar */
 
 header {
@@ -72,7 +71,6 @@ header {
     gap: 100px;
     align-items: center;
 }
-
 
 /* Main Section */
 
@@ -234,6 +232,13 @@ textarea:focus {
 footer input::placeholder,
 textarea::placeholder {
     color: var(--light-gray);
+    opacity: 65%;
+}
+
+.email-warning-wrapper {
+    width: 100%;
+    gap: 5rem;
+    
 }
 
 .email-warning-text {
