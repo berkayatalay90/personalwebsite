@@ -195,7 +195,7 @@ footer {
     justify-content: space-between;
 }
 
-.contact div {
+.contact-info-text, .form-container {
     width: 40%;
 }
 
@@ -238,15 +238,16 @@ textarea::placeholder {
     opacity: 65%;
 }
 
-.email-warning-wrapper {
-    width: 100%;
-    gap: 5rem;
-    
+.email-warning-text {
+    font-size: var(--fs-xsmall);
+    margin-left: 20px;
 }
 
-.email-warning-text {
-    font-size: var(--fs-small);
+.email-warning-icon {
+    margin-right: 5px;
 }
+
+
 
 textarea {
     font-family: "Roboto", sans-serif;
