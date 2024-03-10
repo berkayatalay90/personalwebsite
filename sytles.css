@@ -1,7 +1,6 @@
 :root {
 
     /* Colors */
-    /* --black: rgb(34, 40, 49); */
     --black: rgb(17, 20, 24);
     --dark-gray: rgb(57, 62, 70);
     --light-gray: rgb(238, 238, 238);
@@ -9,7 +8,6 @@
     --blue: rgb(54, 84, 134);
     --orange: rgb(254, 122, 54);
     --dark-orange: rgb(124, 33, 24);
-    /* --new-gray:rgb(118, 112, 112); */
     --new-gray:rgb(89, 89, 89);
 
     /* Font Weight */
@@ -45,7 +43,6 @@ body {
     background-color: var(--new-gray);
     color: var(--light-gray);
     font-weight: var(--fw-normal);
-    padding-inline: 5%;
 }
 
 a {
@@ -64,7 +61,7 @@ button:is(:hover, :focus) {
 /* Header and Navbar */
 
 header {
-    padding: 3% 0;
+    padding: 3% 5%;
     align-items: center;
     justify-content: space-between;
     font-size: var(--fs-xlarge);
@@ -83,10 +80,10 @@ header {
 
 .headings {
     margin: 5% 0 7%;
-    gap: clamp(100px, 25%, 500px);
+    justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid var(--orange);
-    padding-bottom: 150px;
+    padding: 0 5% 150px;
 }
 
 .headings-wrapper {
@@ -147,13 +144,12 @@ h2 {
     color: var(--black);
     gap: 5rem;
     text-align: center;
-    padding: 5% 2%;
+    padding: 5%;
     margin-bottom: 150px;
 }
 
 .bio div {
     width: 50%;
-    /* border: 5px solid rgb(9, 11, 102); */
 }
 
 h4 {
@@ -175,6 +171,12 @@ h4 {
     gap: var(--fs-xxxlarge);
     font-size: var(--fs-xxxxlarge);
     margin-top: 2rem;
+}
+
+/* Portfolio Section */
+
+.portfolio {
+    padding-inline: 5%;
 }
 
 
