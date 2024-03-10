@@ -1,11 +1,16 @@
 :root {
 
     /* Colors */
-    --black: rgb(34, 40, 49);
+    /* --black: rgb(34, 40, 49); */
+    --black: rgb(17, 20, 24);
     --dark-gray: rgb(57, 62, 70);
     --light-gray: rgb(238, 238, 238);
     --green: rgb(0, 173, 181);
     --blue: rgb(54, 84, 134);
+    --orange: rgb(254, 122, 54);
+    --dark-orange: rgb(124, 33, 24);
+    /* --new-gray:rgb(118, 112, 112); */
+    --new-gray:rgb(89, 89, 89);
 
     /* Font Weight */
     --fw-light: 300;
@@ -37,10 +42,10 @@
 body {
     font-family: "Roboto", sans-serif;
     font-size: var(--fs-large);
-    background-color: var(--black);
+    background-color: var(--new-gray);
     color: var(--light-gray);
     font-weight: var(--fw-normal);
-    /* padding-inline: 5%; */
+    padding-inline: 5%;
 }
 
 a {
@@ -80,7 +85,7 @@ header {
     margin: 5% 0 7%;
     gap: clamp(100px, 25%, 500px);
     align-items: center;
-    border-bottom: 2px solid var(--blue);
+    border-bottom: 2px solid var(--orange);
     padding-bottom: 150px;
 }
 
@@ -92,18 +97,20 @@ header {
 
 h1 {
     font-size: var(--fs-xxxxlarge);
+    letter-spacing: 3px;
 }
 
 h1 span {
     text-decoration: underline;
-    text-decoration-color: var(--blue);
+    text-decoration-color: var(--orange);
     text-decoration-thickness: 5px;
     text-decoration-skip-ink: none;
-    text-underline-offset: 8px;
+    text-underline-offset: 3px;
 }
 
 h2 {
     font-size: var(--fs-xxxlarge);
+    font-weight: var(--fw-normal);
 }
 
 .headings p {
@@ -111,7 +118,7 @@ h2 {
 }
 
 .headings button {
-    width: clamp(200px, 50%, 500px);
+    width: clamp(200px, 40%, 500px);
     padding: 15px;
     color: var(--black);
     font-size: var(--fs-large);
@@ -124,7 +131,7 @@ h2 {
 
 .headings button:is(:hover, :focus) {
     border-radius: 8px;
-    box-shadow: 0 0 10px 5px var(--blue);
+    box-shadow: 0 0 10px 2px var(--orange);
 }
 
 .headings img {
@@ -175,7 +182,7 @@ h4 {
 
 footer {
     margin-top: 100px;
-    background-color: var(--blue);
+    background-color: var(--dark-orange);
     padding: 5%;
 }
 
@@ -203,24 +210,27 @@ footer h4 {
 
 form {
     flex-direction: column;
-    gap: 3rem;
+    gap: 1rem;
     width: 75%;
 }
 
-footer input, textarea {
+footer input,
+textarea {
     border: none;
     border-bottom: 1px solid var(--light-gray);
-    background-color: var(--blue);
+    background-color: var(--dark-orange);
     padding: 2% 5% 3%;
     color: var(--light-gray);
     font-size: var(--fs-normal);
 }
 
-footer input:focus, textarea:focus {
+footer input:focus,
+textarea:focus {
     outline: none;
 }
 
-footer input::placeholder, textarea::placeholder {
+footer input::placeholder,
+textarea::placeholder {
     color: var(--light-gray);
 }
 
@@ -232,14 +242,14 @@ textarea {
     font-family: "Roboto", sans-serif;
 }
 
-.form-container button{
+.form-container button {
     border: none;
-    background-color: var(--blue);
+    background-color: var(--dark-orange);
     border-bottom: 2px solid var(--light-gray);
     font-size: var(--fs-large);
     width: 50%;
     align-self: flex-end;
-    padding-bottom: 2%;
+    padding: 20px 0;
     color: var(--light-gray);
     font-size: var(--fs-large);
 }
@@ -251,6 +261,7 @@ textarea {
     margin-top: 100px;
     border-top: 1px solid var(--light-gray);
     padding-top: var(--fs-xxxlarge);
+    /* background-color: var(--black); */
 }
 
 .social-media-icon-container {
