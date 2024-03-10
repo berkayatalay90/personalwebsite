@@ -73,6 +73,7 @@ header {
     align-items: center;
 }
 
+
 /* Main Section */
 
 /* Headings  */
@@ -270,6 +271,12 @@ textarea {
     color: var(--light-gray);
     font-size: var(--fs-large);
 }
+
+.form-container button:hover {
+    font-weight: var(--fw-bold);
+    border-bottom: 3px solid var(--light-gray);
+}
+
 
 /* Social Media Section  */
 
