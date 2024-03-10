@@ -154,8 +154,12 @@ h4 {
     font-size: var(--fs-xxxlarge);
 }
 
+.about-me {
+    padding: 0 5%;
+}
+
 .info {
-    line-height: 1.75;
+    line-height: 2.5;
     margin-top: 20px;
 }
 
@@ -186,7 +190,7 @@ h4 {
 footer {
     margin-top: 100px;
     background-color: var(--dark-orange);
-    padding: 5%;
+    padding: 3% 5% 2%;
 }
 
 /* Contact Section  */
@@ -195,26 +199,29 @@ footer {
     justify-content: space-between;
 }
 
-.contact-info-text, .form-container {
-    width: 40%;
-}
-
 footer h4 {
     font-size: var(--fs-xxxxlarge);
 }
 
+.contact-info-text {
+    width: 40%;
+}
+
+.form-container {
+    width: 35%;
+}
+
 .contact-info-text p {
-    padding-right: 10%;
+    padding-right: 15%;
     margin-top: 20px;
-    line-height: 1.75;
+    line-height: 2;
 }
 
 /* Form Section */
 
 form {
     flex-direction: column;
-    gap: 1rem;
-    width: 75%;
+    gap: .75rem;
 }
 
 footer input,
@@ -240,14 +247,12 @@ textarea::placeholder {
 
 .email-warning-text {
     font-size: var(--fs-xsmall);
-    margin-left: 20px;
+    margin: 20px 0 0 20px;
 }
 
 .email-warning-icon {
     margin-right: 5px;
 }
-
-
 
 textarea {
     font-family: "Roboto", sans-serif;
@@ -258,7 +263,7 @@ textarea {
     background-color: var(--dark-orange);
     border-bottom: 2px solid var(--light-gray);
     font-size: var(--fs-large);
-    width: 50%;
+    width: 40%;
     align-self: flex-end;
     padding: 20px 0;
     color: var(--light-gray);
@@ -269,10 +274,9 @@ textarea {
 
 .social-media-wrapper {
     justify-content: space-between;
-    margin-top: 100px;
+    margin-top: 75px;
     border-top: 1px solid var(--light-gray);
     padding-top: var(--fs-xxxlarge);
-    /* background-color: var(--black); */
 }
 
 .social-media-icon-container {
