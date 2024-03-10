@@ -1,7 +1,8 @@
 :root {
 
     /* Colors */
-    --black: rgb(17, 20, 24);
+    --black: rgb(2, 2, 2);
+    --body: rgb(17, 20, 24);
     --dark-gray: rgb(57, 62, 70);
     --light-gray: rgb(238, 238, 238);
     --green: rgb(0, 173, 181);
@@ -40,7 +41,7 @@
 body {
     font-family: "Roboto", sans-serif;
     font-size: var(--fs-large);
-    background-color: var(--black);
+    background-color: var(--body);
     color: var(--light-gray);
     font-weight: var(--fw-normal);
 }
@@ -57,6 +58,15 @@ button:is(:hover, :focus) {
     cursor: pointer;
 }
 
+/* Social Media & Skill Icons Hover State */
+.hover-effect {
+    transition: transform 0.3s ease;
+}
+
+.hover-effect:hover {
+    transform: scale(1.15);
+}
+
 /* Header and Navbar */
 
 header {
@@ -71,7 +81,7 @@ header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(2, 2, 2);
     z-index: 1000;
 }
 
@@ -111,7 +121,6 @@ header {
     left: 0;
     /* Sol tarafa taşıyarak genişlemeyi sağlar */
 }
-
 
 
 /* Main Section */
@@ -322,9 +331,8 @@ textarea {
 
 .social-media-wrapper {
     justify-content: space-between;
-    margin-top: 75px;
-    border-top: 1px solid var(--light-gray);
-    padding-top: var(--fs-xxxlarge);
+    background-color: var(--black);
+    padding: 2% 5%;
 }
 
 .social-media-icon-container {
