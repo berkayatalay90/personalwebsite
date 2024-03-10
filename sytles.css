@@ -175,6 +175,9 @@ h4 {
 
 .portfolio {
     padding-inline: 5%;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: center;
 }
 
 
