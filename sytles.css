@@ -133,6 +133,8 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 100vh;
+    background: #fff url("images/Patterns/12.jpg") no-repeat left top -700px;
+    background-size: 3000px;
 }
 
 .headings-wrapper {
@@ -197,7 +199,9 @@ h2 {
     margin-bottom: 150px;
     /* background: #fff url("images/Patterns/6.jpg") no-repeat top left -200px;
     background-size: 2000px; */
-    background: #fff url("images/Patterns/10.jpg") no-repeat left top -650px;
+    /* background: #fff url("images/Patterns/10.jpg") no-repeat left top -650px;
+    background-size: 2500px; */
+    background: #fff url("images/Patterns/5.jpg") no-repeat left top -700px;
     background-size: 2500px;
 }
 
@@ -229,6 +233,7 @@ h4 {
     font-size: var(--fs-xxxxlarge);
     margin-top: 2rem;
     gap: 3rem;
+    color: var(--orange);
 }
 
 /* Portfolio Section */
