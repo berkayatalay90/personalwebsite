@@ -54,6 +54,10 @@ a {
     display: flex;
 }
 
+.hidden {
+    display: none;
+}
+
 button:is(:hover, :focus) {
     cursor: pointer;
 }
@@ -188,12 +192,15 @@ h2 {
 /* Bio Section */
 
 .bio {
-    background-color: var(--light-gray);
+    /* background-color: var(--light-gray); */
     color: var(--black);
     gap: 5rem;
     text-align: center;
     padding: 8% 5%;
     margin-bottom: 150px;
+    background: #fff url("images/bio-bg-pic.jpg") no-repeat left top;
+    background-size: 1900px;
+
 }
 
 .bio div {
@@ -272,7 +279,7 @@ footer h4 {
 
 form {
     flex-direction: column;
-    gap: .75rem;
+    gap: 1rem;
 }
 
 footer input,
@@ -295,6 +302,10 @@ textarea::placeholder {
     color: var(--light-gray);
     opacity: 65%;
 }
+
+/* .email-warning-wrapper {
+    transition: 5s;
+} */
 
 .email-warning-text {
     font-size: var(--fs-xsmall);
