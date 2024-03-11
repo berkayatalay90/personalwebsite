@@ -80,15 +80,14 @@ header {
     font-size: var(--fs-xlarge);
     font-weight: var(--fw-semi-bold);
     border-bottom: 1px solid var(--orange);
+    background-color: rgb(2, 2, 2);
 
     /* Sticky */
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-color: rgb(2, 2, 2);
     z-index: 1000;
 }
-
 
 .nav-list {
     gap: 100px;
@@ -97,9 +96,7 @@ header {
 .nav-list li a {
     padding: 5px 0;
     position: relative;
-    /* display: inline-block; Bu, pseudo-elements'ın düzgün çalışabilmesi için önemli */
     overflow: hidden;
-    /* Taşan pseudo-elementlerin gizlenmesini sağlar */
 }
 
 .nav-list li a::before {
@@ -310,8 +307,13 @@ textarea::placeholder {
 }
 
 @keyframes fadeOut {
-    0% { opacity: 1; }
-    100% { opacity: 0; }
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 .email-warning-text {

@@ -1,5 +1,5 @@
-// Email Validation
 
+// Email Validation
 
 function validateEmail() {
     event.preventDefault();
