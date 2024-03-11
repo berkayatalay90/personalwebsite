@@ -129,10 +129,10 @@ header {
 /* Headings  */
 
 .headings {
-    margin: 5% 0 7%;
+    padding-inline: 5%;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5% 150px;
+    height: 100vh;
 }
 
 .headings-wrapper {
@@ -195,9 +195,10 @@ h2 {
     text-align: center;
     padding: 8% 5%;
     margin-bottom: 150px;
-    background: #fff url("images/bio-bg-pic.jpg") no-repeat left top;
-    background-size: 1900px;
-
+    /* background: #fff url("images/Patterns/6.jpg") no-repeat top left -200px;
+    background-size: 2000px; */
+    background: #fff url("images/Patterns/10.jpg") no-repeat left top -650px;
+    background-size: 2500px;
 }
 
 .bio div {
@@ -238,7 +239,6 @@ h4 {
     gap: 5rem;
     justify-content: center;
 }
-
 
 /* Footer */
 
@@ -306,16 +306,6 @@ textarea::placeholder {
     transition: .75s ease;
 }
 
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
 .email-warning-text {
     font-size: var(--fs-xsmall);
     margin: 5px 0 0 20px;
@@ -351,8 +341,10 @@ textarea {
 
 .social-media-wrapper {
     justify-content: space-between;
-    background-color: var(--black);
+    /* background-color: var(--black); */
     padding: 2% 5%;
+    background: var(--black) url("images/Patterns/7.jpg") no-repeat right;
+    background-size: 2000px;
 }
 
 .social-media-icon-container {
