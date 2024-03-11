@@ -1,17 +1,18 @@
 // Email Validation
 
+
 function validateEmail() {
+    event.preventDefault();
     const email = document.getElementById("email").value;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const emailWrapper = document.getElementsByClassName("email-warning-wrapper")[0];
+    const emailWarningWrapper = document.getElementsByClassName("email-warning-wrapper")[0];
+    
 
     if (emailRegex.test(email)) {
-        console.log("Email is valid");
+        emailWarningWrapper.style.maxHeight = null
         console.log(email);
-        emailWrapper.classList.add("hidden");
     } else {
-        emailWrapper.classList.remove("hidden")
+        emailWarningWrapper.style.maxHeight = emailWarningWrapper.scrollHeight + "px";
+        econsole.log("email is not valid");
     }
 }
-
-console.log(email);

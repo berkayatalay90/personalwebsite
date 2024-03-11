@@ -303,13 +303,20 @@ textarea::placeholder {
     opacity: 65%;
 }
 
-/* .email-warning-wrapper {
-    transition: 5s;
-} */
+.email-warning-wrapper {
+    max-height: 0;
+    overflow: hidden;
+    transition: .75s ease;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
 
 .email-warning-text {
     font-size: var(--fs-xsmall);
-    margin: 20px 0 0 20px;
+    margin: 5px 0 0 20px;
 }
 
 .email-warning-icon {
