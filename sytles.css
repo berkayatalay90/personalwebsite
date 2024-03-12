@@ -1,5 +1,4 @@
 :root {
-
     /* Colors */
     --black: rgb(2, 2, 2);
     --body: rgb(17, 20, 24);
@@ -27,21 +26,7 @@
     --fs-xxlarge: 1.75rem;
     --fs-xxxlarge: 2rem;
     --fs-xxxxlarge: 3rem;
-
-    /* Gaps */
-    --gap-xsmall: 1rem;
-    --gap-small: 2rem;
-    --gap-normal: 3rem;
-    --gap-large: 4rem;
-    --gap-xlarge: 5rem;
-    --gap-xxlarge: 6rem;
-    --gap-xxxlarge: 8rem;
-    --gap-xxxxlarge: 10rem;
 }
-
-
-/* width: clamp(250px, 40%, 350px); */
-
 
 * {
     margin: 0;
