@@ -264,7 +264,7 @@ h4 {
 footer {
     margin-top: 100px;
     background-color: var(--dark-orange);
-    padding: 3% 5% 2%;
+    padding: 5%;
 }
 
 /* Contact Section  */
@@ -279,6 +279,7 @@ footer h4 {
 
 .contact-info-text {
     width: 40%;
+    flex-shrink: 0;
 }
 
 .form-container {
@@ -288,7 +289,7 @@ footer h4 {
 .contact-info-text p {
     padding-right: 15%;
     margin-top: 20px;
-    line-height: 2;
+    line-height: 2.5;
 }
 
 /* Form Section */
@@ -311,6 +312,7 @@ textarea {
 footer input:focus,
 textarea:focus {
     outline: none;
+    border-bottom: 3px solid var(--light-gray);
 }
 
 footer input::placeholder,
@@ -343,7 +345,7 @@ textarea {
     background-color: var(--dark-orange);
     border-bottom: 2px solid var(--light-gray);
     font-size: var(--fs-large);
-    width: 40%;
+    width: clamp(200px, 40%, 350px);
     align-self: flex-end;
     padding: 20px 0;
     color: var(--light-gray);
