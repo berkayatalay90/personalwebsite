@@ -79,6 +79,7 @@ header {
     font-weight: var(--fw-semi-bold);
     border-bottom: 1px solid var(--orange);
     background-color: rgb(2, 2, 2);
+    display: flex;
 
     /* Sticky */
     position: -webkit-sticky;
@@ -183,7 +184,7 @@ h2 {
 }
 
 .headings img {
-    width: clamp(150px, 35%, 500px);
+    width: clamp(250px, 35%, 500px);
     border-radius: 25px;
     aspect-ratio: 1/1;
 }
@@ -361,3 +362,116 @@ textarea {
 
 /* Mobile Design */
 
+@media only screen and (max-width: 480px) {
+
+    html {
+        font-size: 14px;
+    }
+
+    /* Header and Navbar */
+
+    header {
+        /* display: none; */
+    }
+
+    .brand-logo-wrapper {
+        display: none;
+    }
+
+    .nav-list {
+        gap: 30px;
+        height: 50px;
+        align-items: center;
+ }
+
+    /* Main Section */
+
+    /* Headings  */
+
+    .headings {
+        height: unset;
+        flex-direction: column-reverse;
+        padding-inline: unset;
+        padding: 15% 5%;
+        text-align: center;
+        gap: 5rem;
+    }
+
+    .headings-wrapper {
+        width: 100%;
+    }
+
+    h2 {
+        padding-inline: 5%;
+    }
+
+    h2,
+    .headings p {
+        line-height: 1.5;
+    }
+
+    /* Bio Section */
+
+    .bio {
+        flex-direction: column;
+        padding-block: 15%;
+        background: var(--light-gray);
+    }
+
+    .bio div {
+        width: 100%;
+    }
+
+    .about-me {
+        padding: unset;
+    }
+
+    .skill-icons-wrapper {
+        gap: 2rem;
+    }
+
+    /* Footer */
+
+    footer {
+        padding-block: 10%;
+    }
+
+    /* Contact Section  */
+
+    .contact {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .contact-info-text,
+    .form-container {
+        width: 100%;
+    }
+
+    .contact-info-text {
+        text-align: center;
+    }
+
+    .footer-heading {
+        font-size: var(--fs-xxlarge);
+    }
+
+    .contact-info-text p {
+        padding-right: unset;
+        padding-inline: 5%;
+        line-height: 1.75;
+    }
+
+    /* Social Media Section  */
+
+    .social-media-wrapper {
+        width: 100%;
+        padding-block: 5%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-brand-logo {
+        display: none;
+    }
+}
