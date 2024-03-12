@@ -27,6 +27,16 @@
     --fs-xxlarge: 1.75rem;
     --fs-xxxlarge: 2rem;
     --fs-xxxxlarge: 3rem;
+
+    /* Gaps */
+    --gap-xsmall: 1rem;
+    --gap-small: 2rem;
+    --gap-normal: 3rem;
+    --gap-large: 4rem;
+    --gap-xlarge: 5rem;
+    --gap-xxlarge: 6rem;
+    --gap-xxxlarge: 8rem;
+    --gap-xxxxlarge: 10rem;
 }
 
 
@@ -133,7 +143,7 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 100vh;
-    background: #fff url("images/Patterns/12.jpg") no-repeat left top -700px;
+    background:var(--black) url("images/Patterns/12.jpg") no-repeat left 350px top ;
     background-size: 3000px;
 }
 
@@ -179,7 +189,7 @@ h2 {
 
 .headings button:is(:hover, :focus) {
     border-radius: 8px;
-    box-shadow: 0 0 10px 2px var(--orange);
+    box-shadow: 0 0 10px 5px var(--orange);
 }
 
 .headings img {
