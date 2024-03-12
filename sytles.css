@@ -244,7 +244,6 @@ h4 {
 
 .skill-icons-wrapper {
     justify-content: center;
-    gap: var(--fs-xxxlarge);
     font-size: var(--fs-xxxxlarge);
     margin-top: 2rem;
     gap: 3rem;
