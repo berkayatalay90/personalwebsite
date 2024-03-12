@@ -40,6 +40,9 @@
 }
 
 
+/* width: clamp(250px, 40%, 350px); */
+
+
 * {
     margin: 0;
     padding: 0;
@@ -143,14 +146,16 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 100vh;
-    background:var(--black) url("images/Patterns/12.jpg") no-repeat left 350px top ;
+    background: var(--black) url("images/Patterns/12.jpg") no-repeat left 350px top;
     background-size: 3000px;
+    gap: clamp(20px, 150px, 350px);
 }
 
 .headings-wrapper {
     flex-direction: column;
     gap: 2rem;
     justify-content: center;
+    min-width: 50%;
 }
 
 h1 {
@@ -161,7 +166,7 @@ h1 {
 h1 span {
     text-decoration: underline;
     text-decoration-color: var(--orange);
-    text-decoration-thickness: 5px;
+    text-decoration-thickness: 3px;
     text-decoration-skip-ink: none;
     text-underline-offset: 3px;
 }
@@ -176,8 +181,8 @@ h2 {
 }
 
 .headings button {
-    width: clamp(200px, 40%, 500px);
-    padding: 15px;
+    width: clamp(250px, 40%, 350px);
+    padding: 20px 15px;
     color: var(--black);
     font-size: var(--fs-large);
     font-weight: var(--fw-bold);
@@ -193,7 +198,7 @@ h2 {
 }
 
 .headings img {
-    width: clamp(100px, 25%, 500px);
+    width: clamp(150px, 35%, 500px);
     border-radius: 25px;
     aspect-ratio: 1/1;
 }
