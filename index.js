@@ -16,3 +16,4 @@ function validateEmail() {
         econsole.log("email is not valid");
     }
 }
+
