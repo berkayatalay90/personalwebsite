@@ -79,7 +79,6 @@ header {
     font-weight: var(--fw-semi-bold);
     border-bottom: 1px solid var(--orange);
     background-color: rgb(2, 2, 2);
-    display: flex;
 
     /* Sticky */
     position: -webkit-sticky;
@@ -88,18 +87,18 @@ header {
     z-index: 1000;
 }
 
-.nav-list {
+.navbar {
     gap: 100px;
     align-items: center;
 }
 
-.nav-list li a {
+.navbar li a {
     padding: 5px 0;
     position: relative;
     overflow: hidden;
 }
 
-.nav-list li a::before {
+.navbar li a::before {
     content: '';
     position: absolute;
     width: 0;
@@ -116,7 +115,7 @@ header {
     /* Animasyon süresi ve tipi */
 }
 
-.nav-list li a:hover::before {
+.navbar li a:hover::before {
     width: 100%;
     /* Tam genişliğe genişlet */
     left: 0;
@@ -375,17 +374,16 @@ textarea {
         display: none;
     }
 
-    #menuIconOpen {
-        display: unset;
-    }
-
-    .nav-list {
+    .navbar {
         gap: 30px;
-        height: 50px;
-        align-items: center;
+        font-size: 1.25rem;
+        padding: 2.5% 0;
         display: none;
     }
-    
+
+    .inline-flex {
+        display: inline-flex;
+    }
 
     /* Main Section */
 

@@ -22,7 +22,7 @@ function validateEmail() {
 // Close Icon X
 
 var menuIconClose = document.getElementById('menuIconClose');
-menuIconClose.style.display = 'none';
+menuIconClose.classList.add("hidden");
 
 // Open Icon
 var menuIconOpen = document.getElementById("menuIconOpen");
@@ -32,9 +32,9 @@ function checkScreenWidth() {
     var minWidth = 480;
 
     if (width <= minWidth) {
-        menuIconOpen.style.display = 'block';
+        menuIconOpen.classList.remove("hidden");
     } else {
-        menuIconOpen.style.display = 'none';
+        menuIconOpen.classList.add("hidden");
     }
 }
 
@@ -45,17 +45,18 @@ window.onload = checkScreenWidth;
 window.addEventListener('resize', checkScreenWidth);
 
 
+// Toggle the icons and the navbar 
 
+let menuIconWrapper = document.getElementsByClassName("menu-icon-wrapper");
 
-// let menuIconOpen = document.getElementById("menuIconOpen");
-// let menuIconClose = document.getElementById("menuIconClose");
-
-
-
-// menuIconOpen.addEventListener("click", function () {
-//     menuIconOpen.classList.add("hidden");
-//     menuIconClose.classList.toggle("hidden");
-// })
-
+for (let i = 0; i < menuIconWrapper.length; i++) {
+    menuIconWrapper[i].addEventListener("click", function () {
+        let navBar = document.getElementById("navbar");
+        navBar.classList.toggle("inline-flex");
+        menuIconOpen.classList.toggle("hidden");
+        menuIconClose.classList.toggle("hidden");
+    })
+    
+}
 
 
