@@ -90,6 +90,7 @@ header {
 
 .nav-list {
     gap: 100px;
+    align-items: center;
 }
 
 .nav-list li a {
@@ -370,19 +371,21 @@ textarea {
 
     /* Header and Navbar */
 
-    header {
-        /* display: none; */
-    }
-
     .brand-logo-wrapper {
         display: none;
+    }
+
+    #menuIconOpen {
+        display: unset;
     }
 
     .nav-list {
         gap: 30px;
         height: 50px;
         align-items: center;
- }
+        display: none;
+    }
+    
 
     /* Main Section */
 
