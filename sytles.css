@@ -1,14 +1,17 @@
 :root {
     /* Colors */
     --black: rgb(2, 2, 2);
-    --body: rgb(17, 20, 24);
-    /* --dark-gray: rgb(57, 62, 70); */
     --light-gray: rgb(238, 238, 238);
-    /* --green: rgb(0, 173, 181); */
-    /* --blue: rgb(54, 84, 134); */
     --orange: rgb(254, 122, 54);
     --dark-orange: rgb(124, 33, 24);
+
+    /* Unused palette */
+    /* --green: rgb(0, 173, 181); */
+    /* --blue: rgb(54, 84, 134); */
     /* --new-gray: rgb(89, 89, 89); */
+    /* --dark-gray: rgb(57, 62, 70); */
+    /* --body: rgb(17, 20, 24); */
+
 
     /* Font Weight */
     --fw-light: 300;
@@ -39,7 +42,7 @@
 body {
     font-family: "Roboto", sans-serif;
     font-size: var(--fs-large);
-    background-color: var(--body);
+    background-color: var(--black);
     color: var(--light-gray);
     font-weight: var(--fw-normal);
 }
@@ -198,18 +201,18 @@ h2 {
 /* Bio Section */
 
 .bio {
-    /* background-color: var(--light-gray); */
+    background-color: var(--light-gray);
     color: var(--black);
     gap: 5rem;
     text-align: center;
     padding: 8% 5%;
     margin-bottom: 150px;
-    /* background: #fff url("images/Patterns/6.jpg") no-repeat top left -200px;
+    /* background: #fff url("images/Patterns/6.jpg") no-repeat top left -300px;
     background-size: 2000px; */
     /* background: #fff url("images/Patterns/10.jpg") no-repeat left top -650px;
+    background-size: 2500px;  */
+    /* background: #fff url("images/Patterns/5.jpg") no-repeat left top -700px;
     background-size: 2500px; */
-    background: #fff url("images/Patterns/5.jpg") no-repeat left top -700px;
-    background-size: 2500px;
 }
 
 .bio div {
@@ -354,7 +357,6 @@ textarea {
 
 .social-media-wrapper {
     justify-content: space-between;
-    /* background-color: var(--black); */
     padding: 2% 5%;
     background: var(--black) url("images/Patterns/7.jpg") no-repeat right;
     background-size: 2000px;
@@ -409,10 +411,6 @@ textarea {
     .navbar {
         animation: Animation 1s ease;
     }
-
-    
-
-
 
     /* Main Section */
 
