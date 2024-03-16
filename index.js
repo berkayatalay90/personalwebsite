@@ -55,7 +55,7 @@ for (let i = 0; i < menuIconWrapper.length; i++) {
         navBar.classList.toggle("inline-flex");
         menuIconOpen.classList.toggle("hidden");
         menuIconClose.classList.toggle("hidden");
-    })
+        })
     
 }
 
