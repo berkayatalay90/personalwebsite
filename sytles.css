@@ -1,6 +1,7 @@
 :root {
     /* Colors */
-    --black: rgb(2, 2, 2);
+    /* --black: rgb(2, 2, 2); */
+    --black: rgb(0, 0, 0);
     --light-gray: rgb(238, 238, 238);
     --orange: rgb(254, 122, 54);
     --dark-orange: rgb(124, 33, 24);
@@ -86,6 +87,8 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    background: var(--black) url("images/Patterns/17.jpg") no-repeat center;
+    background-size: 100%;
 }
 
 .menu-icon-wrapper {
@@ -139,8 +142,8 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 100vh;
-    background: var(--black) url("images/Patterns/12.jpg") no-repeat left 350px top;
-    background-size: 3000px;
+    background: var(--black) url("images/Patterns/19.jpg") no-repeat center;
+    background-size: 100%;
     gap: clamp(20px, 150px, 350px);
 }
 
@@ -205,12 +208,6 @@ h2 {
     text-align: center;
     padding: 8% 5%;
     margin-bottom: 150px;
-    /* background: #fff url("images/Patterns/6.jpg") no-repeat top left -300px;
-    background-size: 2000px; */
-    /* background: #fff url("images/Patterns/10.jpg") no-repeat left top -650px;
-    background-size: 2500px;  */
-    /* background: #fff url("images/Patterns/5.jpg") no-repeat left top -700px;
-    background-size: 2500px; */
 }
 
 .bio div {
