@@ -1,7 +1,7 @@
 // Email Validation
 
 function validateEmail(event) {
-    event.preventDefault();
+    
     const email = document.getElementById("email").value;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const emailWarningWrapper = document.getElementsByClassName("email-warning-wrapper")[0];
@@ -13,6 +13,7 @@ function validateEmail(event) {
     } else {
         emailWarningWrapper.style.maxHeight = emailWarningWrapper.scrollHeight + "px";
         console.log("email is not valid");
+        event.preventDefault();
     }
 }
 
