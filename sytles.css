@@ -197,7 +197,7 @@ h2 {
 }
 
 .headings img {
-    width: clamp(200px, 35%, 500px);
+    width: clamp(300px, 35%, 500px);
     border-radius: 25px;
     aspect-ratio: 1/1;
 }
@@ -401,6 +401,15 @@ textarea {
         margin-right: min(25px);
     }
 
+    .headings {
+        height: unset;
+        flex-direction: column-reverse;
+        padding-inline: unset;
+        padding: 10% 5% 8%;
+        text-align: center;
+        gap: 5rem;
+    }
+
 }
 
 /* Mobile Design */
@@ -450,14 +459,14 @@ textarea {
 
     /* Headings  */
 
-    .headings {
+    /* .headings {
         height: unset;
         flex-direction: column-reverse;
         padding-inline: unset;
         padding: 15% 5%;
         text-align: center;
         gap: 5rem;
-    }
+    } */
 
     .headings-wrapper {
         width: 100%;
