@@ -1,6 +1,6 @@
 // Email Validation
 
-function validateEmail() {
+function validateEmail(event) {
     event.preventDefault();
     const email = document.getElementById("email").value;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -12,7 +12,7 @@ function validateEmail() {
         console.log(email);
     } else {
         emailWarningWrapper.style.maxHeight = emailWarningWrapper.scrollHeight + "px";
-        econsole.log("email is not valid");
+        console.log("email is not valid");
     }
 }
 
