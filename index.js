@@ -29,7 +29,7 @@ var menuIconOpen = document.getElementById("menuIconOpen");
 
 function checkScreenWidth() {
     var width = window.innerWidth;
-    var minWidth = 480;
+    var minWidth = 650;
 
     if (width <= minWidth) {
         menuIconOpen.classList.remove("hidden");
