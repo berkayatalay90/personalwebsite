@@ -82,8 +82,6 @@ header {
     font-weight: var(--fw-semi-bold);
     border-bottom: 1px solid var(--orange);
     background-color: rgb(2, 2, 2);
-
-    /* Sticky */
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -91,14 +89,11 @@ header {
 }
 
 .menu-icon-wrapper {
-    transition: 3s all;
     margin-right: 20px;
 }
 
 .navbar {
-    /* gap: 100px; */
     align-items: center;
-    transition: 3s all;
 }
 
 .navbar li {
@@ -134,7 +129,6 @@ header {
     left: 0;
     /* Sol tarafa taşıyarak genişlemeyi sağlar */
 }
-
 
 /* Main Section */
 
@@ -381,9 +375,7 @@ textarea {
         font-size: 15px;
     }
 
-    body {
-        color: rgb(103, 20, 197);
-    }
+    /* Header and Navbar */
 
     .navbar li {
         margin-left: unset
@@ -458,19 +450,6 @@ textarea {
     /* Main Section */
 
     /* Headings  */
-
-    /* .headings {
-        height: unset;
-        flex-direction: column-reverse;
-        padding-inline: unset;
-        padding: 15% 5%;
-        text-align: center;
-        gap: 5rem;
-    } */
-
-    .headings-wrapper {
-        width: 100%;
-    }
 
     h2 {
         padding-inline: 5%;
