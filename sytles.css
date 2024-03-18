@@ -1,6 +1,5 @@
 :root {
     /* Colors */
-    /* --black: rgb(2, 2, 2); */
     --black: rgb(0, 0, 0);
     --light-gray: rgb(238, 238, 238);
     --orange: rgb(254, 122, 54);
@@ -12,6 +11,7 @@
     /* --new-gray: rgb(89, 89, 89); */
     /* --dark-gray: rgb(57, 62, 70); */
     /* --body: rgb(17, 20, 24); */
+    /* --black: rgb(2, 2, 2); */
 
 
     /* Font Weight */
@@ -73,7 +73,8 @@ button:is(:hover, :focus) {
     transform: scale(1.15);
 }
 
-.menu-icon-wrapper:hover, .menu-icon-wrapper:focus {
+.menu-icon-wrapper:hover,
+.menu-icon-wrapper:focus {
     cursor: pointer;
 }
 
@@ -401,6 +402,7 @@ textarea {
         padding: 10% 5% 8%;
         text-align: center;
         gap: 5rem;
+        background-position: top 0 left 200px;
     }
 
     /* Bio Section */
