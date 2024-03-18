@@ -73,6 +73,10 @@ button:is(:hover, :focus) {
     transform: scale(1.15);
 }
 
+.menu-icon-wrapper:hover, .menu-icon-wrapper:focus {
+    cursor: pointer;
+}
+
 /* Header and Navbar */
 
 header {
