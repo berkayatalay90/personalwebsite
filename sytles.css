@@ -242,7 +242,7 @@ h4 {
     margin-top: 2rem;
     gap: 3rem;
     color: var(--orange);
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 /* Portfolio Section */
@@ -401,6 +401,12 @@ textarea {
         padding: 10% 5% 8%;
         text-align: center;
         gap: 5rem;
+    }
+
+    /* Bio Section */
+
+    .skill-icons-wrapper {
+        flex-wrap: wrap;
     }
 
 }
