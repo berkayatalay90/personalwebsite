@@ -253,6 +253,24 @@ h4 {
     flex-wrap: wrap;
     gap: 5rem;
     justify-content: center;
+    align-items: center;
+}
+
+.portfolio-item {
+    width: 30%;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item img {
+    width: 100%;
+    display: block;
+    height: 400px;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
 }
 
 /* Footer */
